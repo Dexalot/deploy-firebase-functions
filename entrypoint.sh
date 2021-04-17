@@ -1,5 +1,7 @@
 #!/bin/sh
 
+cd functions; npm i
+
 if [ -z "${FIREBASE_TOKEN}" ]; then
     echo "FIREBASE_TOKEN is missing"
     exit 1
