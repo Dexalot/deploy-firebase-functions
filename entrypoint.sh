@@ -1,6 +1,6 @@
 #!/bin/sh
 
-npm i
+npm install;
 
 if [ -z "${FIREBASE_TOKEN}" ]; then
     echo "FIREBASE_TOKEN is missing"
