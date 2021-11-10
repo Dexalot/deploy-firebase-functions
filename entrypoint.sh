@@ -7,14 +7,12 @@ if [ -z "${FIREBASE_TOKEN}" ]; then
     exit 1
 fi
 
-firebase use default
-
 firebase deploy \
     --token ${FIREBASE_TOKEN} \
-    -P default \
+    --project ${PRODUCTION_ID} \
     --only functions
 
 firebase deploy \
     --token ${FIREBASE_TOKEN} \
-    -P production \
+    --project ${DEVTEST_ID} \
     --only functions
