@@ -9,10 +9,10 @@ fi
 
 firebase deploy \
     --token ${FIREBASE_TOKEN} \
-    --P default \
+    -P default \
     --only functions
 
 firebase deploy \
     --token ${FIREBASE_TOKEN} \
-    --P production \
+    -P production \
     --only functions
