@@ -10,7 +10,7 @@ fi
 firebase deploy \
     --token ${FIREBASE_TOKEN} \
     --only functions \
-    -project ${PRODUCTION_ID} 
+    --project ${PRODUCTION_ID} 
 
 firebase deploy \
     --token ${FIREBASE_TOKEN} \
